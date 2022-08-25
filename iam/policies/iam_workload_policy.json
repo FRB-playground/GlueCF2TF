@@ -1,0 +1,17 @@
+{
+   "Version":"2012-10-17",
+   "Statement":[
+      {
+         "Sid":"AssumeRole-AWSSystemsManagerAutomationExecutionRole",
+         "Action":"sts:AssumeRole",
+         "Effect":"Allow",
+         "Resource":"arn:aws:iam::*:role/AWS-SystemsManager-AutomationExecutionRole"
+      },
+      {
+         "Sid":"ListAccountsForParent",
+         "Action":"organizations:ListAccountsForParent",
+         "Effect":"Allow",
+         "Resource":"*"
+      }
+   ]
+}
